@@ -14,22 +14,22 @@ if (!$showForm) return;
 <form class="mso-form t-gray600" method="post">
 
 	<label class="flex flex-vcenter mar20-b">
-		<div class="flex-grow5 w400px-max"><input type="text" class="w100" name="username" value="<?= $PV['username'] ?>" placeholder="<?= t('f3') ?>" required></div>
+		<div class="flex-grow5 w400px-max"><input type="text" class="w100" name="username" value="<?= htmlspecialchars($PV['username'], ENT_QUOTES, 'UTF-8'); ?>" placeholder="<?= t('f3') ?>" required></div>
 		<div class="flex-grow1 mar10-l"><?= t('f4') ?></div>
 	</label>
 
 	<label class="flex flex-vcenter mar20-b">
-		<div class="flex-grow5 w400px-max"><input type="text" class="w100" name="password" value="<?= $PV['password'] ?>" placeholder="<?= t('f5') ?>" required></div>
+		<div class="flex-grow5 w400px-max"><input type="text" class="w100" name="password" value="<?= htmlspecialchars($PV['password'], ENT_QUOTES, 'UTF-8'); ?>" placeholder="<?= t('f5') ?>" required></div>
 		<div class="flex-grow1 mar10-l"><?= t('f6') ?></div>
 	</label>
 
 	<label class="flex flex-vcenter mar20-b">
-		<div class="flex-grow5 w400px-max"><input type="email" class="w100" name="email" value="<?= $PV['email'] ?>" placeholder="<?= t('f7') ?>" required></div>
+		<div class="flex-grow5 w400px-max"><input type="email" class="w100" name="email" value="<?= htmlspecialchars($PV['email'], ENT_QUOTES, 'UTF-8'); ?>" placeholder="<?= t('f7') ?>" required></div>
 		<div class="flex-grow1 mar10-l"><?= t('f8') ?></div>
 	</label>
 
 	<label class="flex flex-vcenter">
-		<div class="flex-grow5 w400px-max"><input type="text" class="w100" name="site_name" value="<?= $PV['site_name'] ?>" placeholder="<?= t('f9') ?>" required></div>
+		<div class="flex-grow5 w400px-max"><input type="text" class="w100" name="site_name" value="<?= htmlspecialchars($PV['site_name'], ENT_QUOTES, 'UTF-8'); ?>" placeholder="<?= t('f9') ?>" required></div>
 		<div class="flex-grow1 mar10-l"><?= t('f10') ?></div>
 	</label>
 
@@ -37,27 +37,27 @@ if (!$showForm) return;
 	<p class="mar0-t italic t-gray500"><?= t('f12') ?></p>
 
 	<label class="flex flex-vcenter mar20-b">
-		<div class="flex-grow5 w400px-max"><input type="text" class="w100" name="db_hostname" value="<?= $PV['db_hostname'] ?>" placeholder="<?= t('f13') ?>" required></div>
+		<div class="flex-grow5 w400px-max"><input type="text" class="w100" name="db_hostname" value="<?=htmlspecialchars($PV['db_hostname'], ENT_QUOTES, 'UTF-8'); ?>" placeholder="<?= t('f13') ?>" required></div>
 		<div class="flex-grow1 mar10-l"><?= t('f14') ?></div>
 	</label>
 
 	<label class="flex flex-vcenter mar20-b">
-		<div class="flex-grow5 w400px-max"><input type="text" class="w100" name="db_username" value="<?= $PV['db_username'] ?>" placeholder="<?= t('f15') ?>" required></div>
+		<div class="flex-grow5 w400px-max"><input type="text" class="w100" name="db_username" value="<?= htmlspecialchars($PV['db_username'], ENT_QUOTES, 'UTF-8'); ?>" placeholder="<?= t('f15') ?>" required></div>
 		<div class="flex-grow1 mar10-l"><?= t('f16') ?></div>
 	</label>
 
 	<label class="flex flex-vcenter mar20-b">
-		<div class="flex-grow5 w400px-max"><input type="text" class="w100" name="db_password" value="<?= $PV['db_password'] ?>" placeholder="<?= t('f17') ?>" required></div>
+		<div class="flex-grow5 w400px-max"><input type="text" class="w100" name="db_password" value="<?= htmlspecialchars($PV['db_password'], ENT_QUOTES, 'UTF-8'); ?>" placeholder="<?= t('f17') ?>" required></div>
 		<div class="flex-grow1 mar10-l"><?= t('f18') ?></div>
 	</label>
 
 	<label class="flex flex-vcenter mar20-b">
-		<div class="flex-grow5 w400px-max"><input type="text" class="w100" name="db_database" value="<?= $PV['db_database'] ?>" placeholder="<?= t('f19') ?>" required></div>
+		<div class="flex-grow5 w400px-max"><input type="text" class="w100" name="db_database" value="<?= htmlspecialchars($PV['db_database'], ENT_QUOTES, 'UTF-8'); ?>" placeholder="<?= t('f19') ?>" required></div>
 		<div class="flex-grow1 mar10-l"><?= t('f20') ?></div>
 	</label>
 
 	<label class="flex flex-vcenter">
-		<div class="flex-grow5 w400px-max"><input type="text" class="w100" name="db_dbprefix" value="<?= $PV['db_dbprefix'] ?>" placeholder="<?= t('f21') ?>" required></div>
+		<div class="flex-grow5 w400px-max"><input type="text" class="w100" name="db_dbprefix" value="<?=htmlspecialchars($PV['db_dbprefix'], ENT_QUOTES, 'UTF-8'); ?>" placeholder="<?= t('f21') ?>" required></div>
 		<div class="flex-grow1 mar10-l"><?= t('f22') ?></div>
 	</label>
 
